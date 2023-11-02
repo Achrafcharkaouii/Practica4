@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulari de A i C</title>
+<link rel="stylesheet" href="formulari.css">
+</head>
+<body>
+        <h1>Formulari</h1>
+        <!--Aquí comença el formulari-->
+                <form action="formulari_enviat.html" method="post">
+                    <h3>Primer, explica'ns qui ets</h3>
+                    <!--Required = que sigui requerit (si no es completa no s'envia)-->
+                    <label for="email">Email</label><input type="email" required name="email"><br><br>
+                    <label for="nom">Nom i cognoms</label><input type="text" required name="nombre"><br><br>
+                    <label for="edat">Edat</label><input type="number" required name="edat"><br><br>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                <h3>Quin cicle estàs estudiant?</h3>
+                    <input type="radio" name="ASIX"><label for="ASIX">ASIX</label><br><br>
+                    <input type="radio" name="DAM"><label for="DAM">DAM</label><br><br>
+                    <input type="radio" name="DAW"><label for="DAW">DAW</label><br><br>
+                    <p></p> 
+                    <p></p>
+                    <!--Select es per fer una tria d'entre vàries-->
+                        <label for="Curs">I en quin curs?</label>  
+                        <select>            
+                        <option value="Primer">Primer</option> 
+                        <option value="Segon">Segon</option> 
+                        </select>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <!--Les checkbox per triar sobre una casella quadrada-->
+                <h3>Marca els termes que vulguis estar sempre al dia!</h3>
+                    <input type="checkbox" name="IA"><label for="IA">Intel·ligència artificial</label><br><br>
+                    <input type="checkbox" name="CQ"><label for="CQ">Computació quàntica</label><br><br>
+                    <input type="checkbox" name="SC"><label for="SC">Supercomputadors</label><br><br>
+                    <input type="checkbox" name="RA"><label for="RA">Recerca en algorísmia</label><br><br>
+                    <p></p>
+                    <p></p>
+                    <!--Textarea amb el placeholder i el botó-->
+                <p>Hi ha algun tema més que t'interessi? Explica'ns-ho!</p>
+                    <textarea name="pregunta" placeholder="També m'agradaría saber les últimes novetats sobre..."></textarea><br>
+                    <input type="submit" value="Envia">
+                </form>
+</body>
+</html>

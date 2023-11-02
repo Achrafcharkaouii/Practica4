@@ -1,0 +1,51 @@
+/* El background de les pàgines ser un color sòlid (no blanc).
+La font usada per les dues pàgines ha de ser la mateixa (i no pot ser la que posa el navegador per defecte). */
+body {
+    background-color:orange;
+    font-family: Arial;
+}
+
+/* Les entrades de text curt i d’email han de tenir una amplada de 300px. Fes servir una classe per aplicar l’estil. */
+.email, input[type="text"] {
+    width: 300px;
+}
+
+/* L’entrada numèrica ha de tenir una amplada de 100px. Fes servir un identificador per aplicar l’estil */
+#Formulari input[type="number"] {
+    width: 100px;
+}
+
+/* Estilizar los botones */
+button, input[type="submit"] {
+    margin: 4px 2px;
+    background-color:yellow;
+    padding: 16px 32px;
+    color:black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Cambia el color de fonts dels botons al pasar el ratoli sobre ells */
+button:hover, input[type="submit"]:hover {
+    background-color: #00a8cc; 
+}
+
+/* Tots els elements, quan tinguin el focus, han de fer algun efecte. */
+*:focus {
+    outline: none;
+    border: 2px solid #0077b6;
+}
+
+
+
+/*A més, com a extra volem establir-li unes dimensions al textarea*/
+textarea {
+    width: 400px;
+    height: 150px;
+}
+body > form > label {
+    margin-right: 10px;
+}
+body > form > select {
+    padding: 5px;
+}
